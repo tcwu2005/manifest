@@ -2,6 +2,9 @@
 <manifest>
   <remote fetch="https://android.googlesource.com/" name="aosp"/>
   <remote fetch="." name="x86"/>
+  <remote  name="github"
+    fetch="https://github.com"
+    revision="master" />
 
   <default remote="aosp" revision="refs/tags/android-4.4.4_r2.0.1" sync-c="true" sync-j="4"/>
 
@@ -362,4 +365,5 @@
   <project groups="pdk" name="platform/system/security" path="system/security" revision="ee8068b9e7bfb2770635062fc9c2035be2142bd8" upstream="refs/tags/android-4.4.4_r2.0.1"/>
   <project groups="pdk" name="platform/system/vold" path="system/vold" remote="x86" revision="67cd38934acb70a341655b24fab84968176ea0a0" upstream="kitkat-x86"/>
   <project name="platform/vendor/intel/houdini" path="vendor/intel/houdini" remote="x86" revision="682738b281c10c054fa83001f827ad4097541a8c" upstream="kitkat-x86"/>
+  <project path="external/lxc" name="tcwu2005/platform_external_lxc" remote="github" />
 </manifest>
